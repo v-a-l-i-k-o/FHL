@@ -851,7 +851,7 @@ nav {
   margin-bottom: 7rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 30%;
   background-image: url('../img/appeal_bg.png');
 }
 .appeal .container {
@@ -896,11 +896,11 @@ nav {
 }
 .intent_content {
   float: left;
-  width: 56.5%;
+  width: 58%;
 }
 .intent_content > p {
   color: #1d458a;
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 400;
   line-height: 1.3;
   margin-bottom: 2.5rem;
@@ -910,7 +910,7 @@ nav {
   list-style: none;
   font-size: 3.3em;
   font-weight: 400;
-  margin: 0 -5.5rem;
+  margin: 0 -4rem;
 }
 .intent_causes li {
   *display: inline;
@@ -919,7 +919,7 @@ nav {
   padding: 0 0%;
   width: 50%;
   *width: 49.94791667%;
-  padding: 0 5.5rem;
+  padding: 0 4rem;
   margin-bottom: 7rem;
 }
 .intent_causes h3 {
@@ -930,15 +930,18 @@ nav {
   line-height: 1.3;
 }
 .intent_causes img {
+  top: 3rem;
   float: left;
-  padding-top: 3rem;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
 }
 .intent_causes div {
-  padding-left: 4em;
+  padding-left: 4.5em;
 }
 .intent_banners {
   float: right;
-  width: 43.5rem;
+  width: 35rem;
   padding-left: 2rem;
   position: relative;
 }
@@ -991,10 +994,10 @@ nav {
   color: #fff;
 }
 .invitation_content {
-  padding: 4rem 0 7.5rem;
+  padding: 4rem 0 6rem;
 }
 .invite-text {
-  width: 46.5%;
+  width: 47%;
   display: inline-block;
 }
 .invite-text p {
@@ -1021,7 +1024,7 @@ nav {
   background-color: #0e8f45;
 }
 .invitation_bottom .container {
-  padding: .7rem 0;
+  padding: 1rem 0;
 }
 .invitation_bottom span {
   color: #fcfdfe;
@@ -1042,6 +1045,11 @@ nav {
 /* ----- SECTION participants ----- */
 .participants {
   padding-bottom: 6.5rem;
+  background-size: 70%;
+  background-position: 0 60%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-image: url('../img/participants_bg.png');
 }
 .participants h2 {
   color: #00aeef;
@@ -1049,11 +1057,11 @@ nav {
 }
 .participants_info {
   float: left;
-  width: 56.5%;
+  width: 58%;
 }
 .members {
   color: #1d458a;
-  margin: 0 -6rem;
+  margin: 0 -4rem;
   list-style: none;
   font-size: 3.3em;
   font-weight: 400;
@@ -1065,7 +1073,7 @@ nav {
   padding: 0 0%;
   width: 50%;
   *width: 49.94791667%;
-  padding: 0 6rem;
+  padding: 0 4rem;
   margin-bottom: 10.5rem;
 }
 .members p {
@@ -1073,12 +1081,15 @@ nav {
   padding-left: 4em;
 }
 .members img {
+  top: 2rem;
   float: left;
-  padding-top: 1rem;
+  width: 9rem;
+  height: 9rem;
+  position: relative;
 }
 .participants_banners {
   float: right;
-  width: 43.5rem;
+  width: 35rem;
   padding-left: 2rem;
   position: relative;
 }
@@ -1212,152 +1223,13 @@ footer .patch {
 }
 /* ===== #MADIA QUERIES FOR RESPONSIVE DESIGN ===== */
 /* ----- DESKTOP VERSION ----- */
-@media screen and (max-width: 1749px) {
-  h2 {
-    font-size: 3em;
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 56.25%;
   }
-  /* ----- HEADER ----- */
-  header li {
-    padding: 0 .3em;
-    font-size: 3.6em;
-    font-weight: 400;
-    display: inline-block;
+  .container {
+    max-width: 125rem;
   }
-}
-@media screen and (max-width: 1679px) {
-  h2 {
-    font-size: 2.8em;
-  }
-  .tel {
-    font-size: 5em;
-  }
-  /* ----- HEADER ----- */
-  header {
-    min-height: 43rem;
-  }
-  header .container {
-    padding-top: 8rem;
-  }
-  header li {
-    font-size: 3em;
-  }
-  .logo img {
-    width: 50rem;
-  }
-  .slogan {
-    float: right;
-    padding-right: 1rem;
-  }
-  .slogan div + div {
-    font-size: 6em;
-  }
-  .header-wrapper {
-    margin-top: 7rem;
-    position: relative;
-  }
-  /* ----- NAV ----- */
-  .nav_menu li {
-    height: 8rem;
-    line-height: 8rem;
-  }
-  .nav_menu a {
-    height: 8rem;
-    font-size: 2.7em;
-  }
-  /* ----- SECTION appeal ----- */
-  .appeal {
-    min-height: 80rem;
-  }
-  .appeal p {
-    font-size: 3em;
-  }
-  /* ----- SECTION intent ----- */
-  .intent_causes {
-    font-size: 2.7em;
-  }
-  .double-birds {
-    top: -2.5rem;
-    left: -15rem;
-  }
-  /* ----- SECTION invitation ----- */
-  .invitation_top .container {
-    top: 50%;
-    position: relative;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .invitation_top .invite {
-    width: 65em;
-  }
-  .invite  span {
-    font-size: 4em;
-  }
-  /* ----- SECTION participants ----- */
-  .members {
-    font-size: 2.5em;
-    margin: 0 -3rem;
-  }
-  .members li {
-    padding: 0 3rem;
-    margin-bottom: 12rem;
-  }
-  .members p {
-    padding-left: 4.5em;
-  }
-  .double-birds {
-    top: 1.5rem;
-    left: -20rem;
-  }
-  /* ----- SECTION driving-directions ----- */
-  .driving-directions {
-    padding: 4.5rem 0;
-    margin-bottom: 8rem;
-  }
-  .driving-directions .driving-directions_wrapper {
-    margin: 0 -1.5rem;
-  }
-  .driving-directions span {
-    top: .7rem;
-    font-size: 3em;
-  }
-  .driving-directions span:after {
-    width: 4rem;
-    height: 8rem;
-    margin-top: -4rem;
-  }
-  .driving-directions_place p {
-    font-size: 3em;
-    padding-right: 5rem;
-  }
-  .driving-directions_route p {
-    font-size: 2em;
-    padding-right: 1rem;
-  }
-  /* ----- FOOTER ----- */
-  footer {
-    padding-bottom: 5.5rem;
-  }
-  footer .container {
-    height: 8.5rem;
-  }
-  footer .patch {
-    height: 8.5rem;
-  }
-  .group-restek {
-    font-size: 2.4em;
-  }
-  .group-restek p + p {
-    margin-top: .7rem;
-  }
-  .footer_brands .brand1 {
-    width: 9rem;
-  }
-  .footer_brands .brand2 {
-    width: 40rem;
-  }
-}
-@media screen and (max-width: 1439px) {
   h2 {
     font-size: 2.6em;
   }
@@ -1431,26 +1303,32 @@ footer .patch {
     min-height: 75rem;
   }
   .appeal p {
-    font-size: 2.7em;
+    font-size: 2.5em;
+  }
+  .appeal .container {
+    padding-top: 3rem;
   }
   .opening-time div {
-    font-size: 5em;
+    font-size: 4.3em;
   }
   .opening-time span {
-    font-size: 2.6em;
+    font-size: 2.3em;
   }
   /* ----- SECTION intent ----- */
   .intent_causes {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
   .intent_banners .double-birds {
     width: 7.5rem;
     top: -1rem;
-    left: -9rem;
+    left: -12rem;
   }
   /* ----- SECTION invitation ----- */
+  .invitation_top {
+    height: 22rem;
+  }
   .invitation_top .invite {
-    width: 58em;
+    width: 55em;
   }
   .invite  span {
     font-size: 3.7em;
@@ -1468,14 +1346,209 @@ footer .patch {
   .members {
     font-size: 2.5em;
   }
+  .members li {
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+  }
+  .members p {
+    padding-left: 4.5em;
+  }
+  .members img {
+    top: 1rem;
+  }
   .participants {
-    padding-bottom: 6.5rem;
+    padding-bottom: 4rem;
   }
   .participants h2 {
-    margin: 3rem 0 8.5rem;
+    margin: 3rem 0 7rem;
   }
   .participants_banners .double-birds {
-    left: -9rem;
+    left: -11rem;
+    width: 7.5rem;
+  }
+  /* ----- SECTION driving-directions ----- */
+  .driving-directions {
+    padding: 4.5rem 0;
+    margin-bottom: 6rem;
+  }
+  .driving-directions .driving-directions_wrapper {
+    margin: 0 -1.5rem;
+  }
+  .driving-directions span {
+    top: .7rem;
+    font-size: 2.7em;
+  }
+  .driving-directions span:after {
+    width: 4rem;
+    height: 8rem;
+    margin-top: -4rem;
+  }
+  .driving-directions_place p {
+    font-size: 2.6em;
+    padding-right: 3.5rem;
+  }
+  .driving-directions_route p {
+    font-size: 1.8em;
+    padding-right: 1rem;
+  }
+  /* ----- FOOTER ----- */
+  footer {
+    padding-bottom: 4.5rem;
+  }
+  footer .container {
+    height: 7rem;
+  }
+  footer .patch {
+    height: 7rem;
+  }
+  .group-restek {
+    font-size: 2em;
+  }
+  .group-restek p + p {
+    margin-top: .7rem;
+  }
+  .footer_brands .brand1 {
+    width: 7rem;
+  }
+  .footer_brands .brand2 {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 1599px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 125rem;
+  }
+  h2 {
+    font-size: 2.6em;
+  }
+  .tel {
+    font-size: 4.5em;
+  }
+  /* ----- HEADER ----- */
+  header {
+    min-height: 32rem;
+  }
+  header .container {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+  header li {
+    padding: 0 .2em;
+    font-size: 2.6em;
+  }
+  header span:after {
+    height: 2rem;
+    top: 50%;
+    right: -0.7rem;
+  }
+  header img.place {
+    width: 19rem;
+    right: 2rem;
+    bottom: 0;
+    padding: 0 0 .8rem 1.7rem;
+  }
+  .logo img {
+    width: 40rem;
+  }
+  .slogan {
+    float: right;
+    padding-right: 1rem;
+  }
+  .slogan div + div {
+    font-size: 4.5em;
+  }
+  .slogan div + div:before {
+    left: -8rem;
+    width: 7.5rem;
+    background-size: contain;
+  }
+  .slogan div + div:after {
+    width: 5rem;
+    right: -1rem;
+    bottom: -2rem;
+    background-size: contain;
+  }
+  .header-wrapper {
+    margin-top: 4rem;
+    position: relative;
+  }
+  /* ----- NAV ----- */
+  .nav_menu li {
+    height: 6rem;
+    line-height: 6rem;
+  }
+  .nav_menu li:before,
+  .nav_menu li:after {
+    height: 4.4rem;
+    margin-top: -2.2rem;
+  }
+  .nav_menu a {
+    height: 6rem;
+    font-size: 2em;
+  }
+  /* ----- SECTION appeal ----- */
+  .appeal {
+    min-height: 75rem;
+  }
+  .appeal p {
+    font-size: 2.5em;
+  }
+  .appeal .container {
+    padding-top: 3rem;
+  }
+  .opening-time div {
+    font-size: 4.3em;
+  }
+  .opening-time span {
+    font-size: 2.3em;
+  }
+  /* ----- SECTION intent ----- */
+  .intent_causes {
+    font-size: 2.5em;
+  }
+  .intent_banners .double-birds {
+    width: 7.5rem;
+    top: -1rem;
+    left: -12rem;
+  }
+  /* ----- SECTION invitation ----- */
+  .invitation_top {
+    height: 22rem;
+  }
+  .invitation_top .invite {
+    width: 55em;
+  }
+  .invite  span {
+    font-size: 3.7em;
+  }
+  .invitation_bottom span {
+    font-size: 2.8em;
+  }
+  .invite-text p {
+    font-size: 2.2em;
+  }
+  /* ----- SECTION participants ----- */
+  .members {
+    font-size: 2.5em;
+  }
+  .members li {
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+  }
+  .members p {
+    padding-left: 4.5em;
+  }
+  .participants {
+    padding-bottom: 4rem;
+  }
+  .participants h2 {
+    margin: 3rem 0 7rem;
+  }
+  .participants_banners .double-birds {
+    left: -11rem;
     width: 7.5rem;
   }
   /* ----- SECTION driving-directions ----- */
@@ -1533,6 +1606,9 @@ footer .patch {
   .tel {
     font-size: 4em;
   }
+  .container {
+    max-width: 103rem;
+  }
   /* ----- HEADER ----- */
   header {
     min-height: 3rem;
@@ -1582,6 +1658,7 @@ footer .patch {
   /* ----- SECTION appeal ----- */
   .appeal {
     min-height: 75rem;
+    margin-bottom: 5rem;
   }
   .appeal p {
     font-size: 2.4em;
@@ -1604,7 +1681,7 @@ footer .patch {
     font-size: 2em;
   }
   .intent_causes {
-    font-size: 1.8em;
+    font-size: 2.2em;
     margin: 0 -2.5rem;
   }
   .intent_causes li {
@@ -1612,13 +1689,14 @@ footer .patch {
     margin-bottom: 4rem;
   }
   .intent_causes img {
-    padding-top: 1rem;
+    width: 7rem;
+    height: 7rem;
   }
   .intent_causes h3 {
     font-size: 1em;
   }
   .intent_causes div {
-    padding-left: 6em;
+    padding-left: 5em;
   }
   .intent_banners {
     width: 27rem;
@@ -1659,8 +1737,13 @@ footer .patch {
   .members p {
     padding-left: 5em;
   }
+  .members img {
+    top: 1rem;
+    width: 7rem;
+    height: 7rem;
+  }
   .participants {
-    padding-bottom: 0;
+    padding-bottom: 4rem;
   }
   .participants h2 {
     margin: 3rem 0 6rem;
